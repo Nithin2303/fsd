@@ -1,0 +1,10 @@
+<h1>Student Database</h1>
+<h3>Today we are going to discuss on class based view (cbv) . CRED operation (create,retrieve,update,delete).</h3>
+
+{% for object in object_list %}
+<li>Roll no    : {{ object.id }} </li>
+<li>Name       : {{ object.name }} </li>
+<li>Department : {{ object.department }} </li>
+<li>Contact    : {{ object.contact }} </li>
+<li>Address    : {{ object.address }} </li>
+{% endfor %}
